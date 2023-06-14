@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DALL-E 2 YOU | DE AI POWERED PLAK TATTOO GENERATOR</title>
+</head>
+
+<body>
+    <div class="frame-square top-left"></div>
+    <div class="frame-square top-right"></div>
+    <div class="frame-square bottom-left"></div>
+    <div class="frame-square bottom-right"></div>
+    <header>
+        <h4>dall-e 2 you</h4>
+        <img src="./img/icons/arrow-right.png" alt="arrow right">
+        <h4>De AI powered plak tattoo generator</h4>
+        <label class="toggle">
+            <input type="checkbox" checked>
+            <span class="slider"></span>
+            <h4>- Tattoo mode</h4>
+        </label>
+        <button class="moreInfo">i</button>
+        <img src="./img/openai-logo.png" alt="openAI logo">
+    </header>
+    <main class="">
+        <form action="">
+            <label for="">Tattoo omschrijving</label>
+            <input type="text">
+            <button><img src="./img/icons/arrow-projectile.png" alt="Verstuur query pijl"></button>
+        </form>
+        <section class="results" hidden>
+            <!-- <img src="https://picsum.photos/200/301" alt="">
+            <img src="https://picsum.photos/200/302" alt="">
+            <img src="https://picsum.photos/200/303" alt="">
+            <img src="https://picsum.photos/200/304" alt=""> -->
+        </section>
+        <section class="not">
+            <div>
+                <h4>Batches in productie</h4>
+                <ul class="progressList">
+                    <li>#0002</li>
+                </ul>
+                <form action="">
+                    <input type="number" class="newInProgress">
+                    <button class="addInProgress">+</button>
+                </form>
+            </div>
+            <div>
+                <h4>Batches Klaar</h4>
+                <ul class="readyList">
+                    <li>#0001</li>
+                </ul>
+                <form action="">
+                    <input type="number" class="newReady">
+                    <button class="addReady">+</button>
+                </form>
+            </div>
+        </section>
+        <section class="popup">
+            <h2>Help</h2>
+            <h3>Pinter en papier</h3>
+            <p>Zorg er voor dat het papier met de glimmende kant onder in de printer ligt. Als dit niet het geval is
+                zullen de tattooages niet op de huid blijven plakken.</p>
+            <h3>Stappenplan tattooage afdrukken</h3>
+            <ol>
+                <li>Laat de gebruiker een omschrijving invoeren van de tattooage</li>
+                <li>Klik op de genereer pijl naast het input veld. Laat de gebruiker EEN afbeelding kiezen. <span>Mocht
+                        de gebruiker echt niet tevreden zijn met de resultaten kun je maximaal 1 keer een re-roll
+                        doen</span></li>
+                <li>Open de gekozen foto. Klik met de rechter muisnop op de foto en selecteer afbeelding kopieren</li>
+                <li>Open Figma* en klik op een lege cel terwijl je cmnd/ctrl ingerukt houdt. Vergeet de naam van de
+                    gebruiker er niet onder te zetten.</li>
+                <li>Plak de eerder gekopieerde afbeelding met cmnd/cntrl + v. De afbeelding zou nu op het batch sheet
+                    moeten staan</li>
+                <li>Batch vol? Maak als eerste een nieuwe aan door de template te dupliceren en het batch nummer aan te
+                    passen.</li>
+                <li>De complete batch is af te drukken door die pagina te selecteren. Er zo nu rechts onder in het
+                    scherm een knop moeten verschijnen met 'Export PDF'.</li>
+                <li>Druk je nieuwe pdf af. Pak vervolgens een lijm vel en plaats die over de gedrukte tattooages heen.
+                    Zorg er voor dat er min mogelijk lucht tussen zit door het met een plastic kaart over heen te gaan
+                </li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <h4>powerd by dall-e 2</h4>
+        <button hidden>
+            <img src="./img/icons/ci_redo.png" alt="">
+        </button>
+        <img src="./img/dall-e-watermark.png" alt="arrow right">
+    </footer>
+    <script defer src="./script.js"></script>
+    <script defer src="./batchMan.js"></script>
+</body>
+
+</html>
